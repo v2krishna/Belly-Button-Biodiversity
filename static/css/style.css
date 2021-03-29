@@ -1,0 +1,17 @@
+body {
+
+    color:"white";
+    background-color: "black";
+  }
+  .jumbotron {
+    background-image: url("/static/images/bellybuttons.jpg"); */
+    background-size: default;
+    text-align: center;
+    color: white;
+    
+  }
+  .panel-heading{
+      text-align:center;
+      background-color:black;
+      font-display: display4;
+    }

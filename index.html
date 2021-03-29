@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p style="color:darkred; font-size:24px; font-weight: bold;">Interactive Charts</p>
+      </div>
+    </div>
+    <div class="row panel">
+      <div class="panel-title">
+        <p>Belly Button Biodiversity to investigate the microbes inhabiting our navels and the factors that might influence the microscopic life calling this protected, moist patch of skin home.
+        <br><br/><b>References:</b>
+          <ol>
+            <li><a href="https://www.nationalgeographic.org/article/belly-button-biodiversity/">nationalgeographic</a></li>
+          <li><a href="http://yourwildlife.org/category/belly-button-biodiversity/">yourwildlife</a> </li>
+          <li><a href="http://robdunnlab.com/projects/belly-button-biodiversity/#:~:text=The%20coolest%20study%20of%20biodiversity,yet%20it%20remains%20relatively%20unexplored.&text=In%20addition%20to%20inspiring%20scientific,play%20in%20our%20daily%20lives">robdunnlab.com</a></li>
+          </ol>
+          
+        </br>
+          
+        </p>
+      </div>
+      <div class="col-md-2">
+        <div class="well panel panel-info">
+          <h5><b>Subject ID No:</b></h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title"><b>Demographic Info</b></h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+          
+        </div>
+        <div id="sample-metadata-info">Displays the Demoigrahic Information of the Subject ID selected</div>
+      </div>
+      <div class="col-md-5 panel panel-info">
+        <div id="bar"></div>
+        <div id="bar-info">
+          Based on the Sample or Subject Id selected the Bar chart displays the Top 10 OTU values
+        </div>
+      </div>
+      <div class="col-md-5 panel panel-info">
+        <div id="gauge"></div>
+        <div id="weeklyfrequency-info" style="text-align:center">Guage Value displays the no. of times the Bellybutton been cleaned as per selected ID</div>
+      </div>
+    </div>
+    <div class="row">
+      
+      <div class="col-md-12 panel panel-info">
+        <div id="bubble"></div>
+        <div style="text-align: center;">Display the count of bacteria per sample , the size of the sample depends of the larger value of the sample count</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
+
+</body>
+
+</html>
