@@ -4,7 +4,7 @@ body {
     background-color: "black";
   }
   .jumbotron {
-    background-image: url("./static/images/bellybuttons.jpg"); */
+    background-image: url("../images/bellybuttons.jpg"); */
     background-size: default;
     text-align: center;
     color: white;
